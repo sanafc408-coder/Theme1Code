@@ -61,7 +61,9 @@ def get_all_posts():
 # ---------------------------
 # Streamlit UI
 # ---------------------------
-st.title("🎓 Student Connect Platform")
+st.title("🎓 SkillSync")
+st.subheader("The Student Powered Connectivity Platform")
+
 
 menu = ["Login", "Signup"]
 choice = st.sidebar.selectbox("Menu", menu)
