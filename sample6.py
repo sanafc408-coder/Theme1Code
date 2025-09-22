@@ -162,15 +162,19 @@ if "logged_in" not in st.session_state:
     st.session_state.username = ""
 
 # ---------------- MAIN APP ----------------
-st.set_page_config(page_title="Student Connectivity Platform", layout="wide")
-st.title("🎓 Student Connectivity Platform")
+st.set_page_config(page_title="SkillSync", layout="wide")
+st.title("🎓 SkillSync")
+import streamlit as st
+
+st.image("image.jpg", width=500)
+
 
 menu = ["Home", "Login", "SignUp"]
 choice = st.sidebar.selectbox("Menu", menu)
 
 # ---------------- HOME ----------------
 if choice == "Home":
-    st.subheader("Welcome to Student Connectivity Platform")
+    st.subheader("The Student Powered Connectivity Platform")
     st.write("Connect, share, and grow with students across campuses.")
 
 # ---------------- SIGNUP ----------------
